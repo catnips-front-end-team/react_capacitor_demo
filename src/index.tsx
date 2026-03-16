@@ -12,6 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+      {/*** 直接替换这个APP组件, 比如<Game/> ***/}
     <App />
   </React.StrictMode>
 );
