@@ -38,15 +38,17 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "react": "^19.2.4",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^19.2.4",
     "react-scripts": "5.0.1",
     "typescript": "^5.9.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "build:single": "GENERATE_SOURCEMAP=false react-app-rewired build && node scripts/inline-html.mjs",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
